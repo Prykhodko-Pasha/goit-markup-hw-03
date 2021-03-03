@@ -1,0 +1,224 @@
+:root {
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --third-color: #fff;
+  --active-color: #2196f3;
+  --dark-bg-color: #2f303a;
+  --light-bg-color: #f5f4fa;
+  --logo-header-color: #000;
+  --hero-button-focus-color: #188ce8;
+  --filters-button-color: #f5f4fa;
+}
+
+.link {
+  text-decoration: none; /* убираем подчеркивание ссылок */
+}
+
+.list {
+  list-style-type: none; /* убираем маркеры */
+}
+
+body {
+  font-family: "Roboto", sans-serif; /* задаем основной шрифт */
+}
+
+.hidden-header {
+  display: none; /* скрываем ненужные заголовки */
+}
+
+/* ============ LOGO ============ */
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--active-color);
+  letter-spacing: 0.03em;
+}
+
+.logo-header {
+  color: var(--logo-header-color);
+}
+
+/* ============ NAV ============ */
+.menu {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.menu-item-link {
+  color: var(--main-color);
+}
+
+.menu-item-link:hover,
+.menu-item-link:focus {
+  color: var(--active-color);
+}
+
+.menu-active-item {
+  color: var(--active-color);
+}
+
+/* ============ HEADER CONTACTS ============ */
+.header-contacts-link {
+  color: var(--secondary-color);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--active-color);
+}
+
+/* ============ ШАПКА ============ */
+.hero {
+  background-color: var(--dark-bg-color);
+}
+
+.hero-motto {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--third-color);
+}
+
+.hero-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--third-color);
+  background-color: var(--active-color);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hero-button-focus-color);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* ============ ОСОБЕННОСТИ ============ */
+.features-list-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.features-list-description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+/* ============ ЧЕМ МЫ ЗАНИМАЕМСЯ ============ */
+.section-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+/* ============ НАША КОМАНДА ============ */
+.team {
+  background-color: var(--light-bg-color);
+}
+
+.team-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.team-item-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background-color: var(--dark-bg-color);
+}
+
+.logo-footer {
+  color: var(--third-color);
+}
+
+address {
+  font-style: normal; /* убираем курсив */
+}
+
+.footer-contacts-address,
+.footer-contacts-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-contacts-address {
+  color: var(--third-color);
+}
+
+.footer-contacts-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ============ PORTFOLIO ============ */
+
+.filters-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-color: var(--filters-button-color);
+  border-width: 0;
+}
+
+.filters-button:hover,
+.filters-button:focus {
+  color: var(--third-color);
+  background-color: var(--active-color);
+}
+
+.project-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+
+.filter-item {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
