@@ -87,8 +87,8 @@ img {
 
 /* ============ HEADER ============ */
 .header .container {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
@@ -103,6 +103,8 @@ img {
   color: var(--active-color);
   letter-spacing: 0.03em;
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-header {
@@ -131,6 +133,11 @@ img {
   color: var(--active-color);
 }
 
+.navigation-list a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .navigation-list li:not(:last-child) {
   margin-right: 50px; /* отступы между елементами списков в хедере */
 }
@@ -138,6 +145,8 @@ img {
 /* ============ header contacts ============ */
 .header-contacts-link {
   color: var(--secondary-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-contacts-link:hover,
