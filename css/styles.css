@@ -54,19 +54,44 @@ ol {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: tomato;
+  /* outline: 2px solid tomato; */
+}
+
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.flex-four-items-in-row {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.flex-three-items-in-row {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+img {
+  display: block;
 }
 
 /* ============ HEADER ============ */
-
-/* .header {
-  background-color: tomato;
-} */
-
 .header .container {
-  height: 80px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 /* ============ logo ============ */
@@ -106,12 +131,8 @@ ol {
   color: var(--active-color);
 }
 
-.container ul {
-  margin-left: auto;
-}
-
 .navigation-list li:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 50px; /* отступы между елементами списков в хедере */
 }
 
 /* ============ header contacts ============ */
@@ -124,6 +145,10 @@ ol {
   color: var(--active-color);
 }
 
+.container .navigation-list {
+  margin-left: auto; /* придавливаем контакты вправо */
+}
+
 /* ============ ШАПКА ============ */
 .hero {
   background-color: var(--dark-bg-color);
@@ -132,14 +157,15 @@ ol {
 }
 
 .hero-motto {
+  width: 696px;
+  margin: 0 auto 30px;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.37;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-color);
-  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -148,15 +174,13 @@ ol {
   font-size: 16px;
   line-height: 1.88;
   padding: 10px 32px;
-  margin: 0 auto;
   letter-spacing: 0.06em;
   color: var(--third-color);
   background-color: var(--active-color);
   border-radius: 4px;
   border: none;
-
-  /* width: 200px; */
-  /* height: 50px; */
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-button:hover,
@@ -166,10 +190,6 @@ ol {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* .hero .container {
-  justify-content: center;
-} */
-
 /* ============ ОСОБЕННОСТИ ============ */
 .features-list-header {
   font-weight: 700;
@@ -178,6 +198,7 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 
 .features-list-description {
@@ -195,6 +216,11 @@ ol {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+.jobs {
+  padding-top: 0;
 }
 
 /* ============ НАША КОМАНДА ============ */
@@ -209,6 +235,8 @@ ol {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-item-position {
@@ -217,6 +245,14 @@ ol {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-bottom: 30px;
+}
+
+.team-item {
+  background: var(--third-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* ============ FOOTER ============ */
@@ -230,6 +266,7 @@ footer {
 
 address {
   font-style: normal; /* убираем курсив */
+  margin-top: 20px;
 }
 
 .footer-contacts-address,
@@ -247,6 +284,15 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+address li {
+  margin-top: 9px;
+}
+
 /* ============ PORTFOLIO ============ */
 
 .filters-button {
@@ -257,17 +303,19 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: none;
   border-radius: 4px;
   background-color: var(--filters-button-color);
   border-width: 0;
+  padding: 6px 22px;
 }
 
 .filters-button:hover,
 .filters-button:focus {
   color: var(--third-color);
   background-color: var(--active-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-header {
@@ -276,6 +324,7 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
+  margin-bottom: 4px;
 }
 
 .filter-item {
@@ -283,4 +332,20 @@ address {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+}
+
+.filters-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filters-list li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.projects-description {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
 }
